@@ -81,3 +81,22 @@ export function PlayIcon() {
     </svg>
   )
 }
+
+export function MenuIcon({ size = 22 }: IconProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" {...stroke} aria-hidden="true">
+      <line x1="3" y1="7" x2="21" y2="7" />
+      <line x1="3" y1="12" x2="21" y2="12" />
+      <line x1="3" y1="17" x2="21" y2="17" />
+    </svg>
+  )
+}
+
+export function CloseIcon({ size = 22 }: IconProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" {...stroke} aria-hidden="true">
+      <path d="m6 6 12 12" />
+      <path d="m18 6-12 12" />
+    </svg>
+  )
+}

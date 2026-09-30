@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { CloseIcon, MenuIcon } from './icons'
 import styles from './Nav.module.css'
 import { navLinks } from './navLinks'
 
@@ -32,11 +33,12 @@ export function Nav({ name }: { name: string }) {
       <button
         type="button"
         className={styles.menuButton}
+        aria-label={menuOpen ? 'Close menu' : 'Open menu'}
         aria-expanded={menuOpen}
         aria-controls="mobile-menu"
         onClick={() => setMenuOpen((open) => !open)}
       >
-        {menuOpen ? 'Close' : 'Menu'}
+        {menuOpen ? <CloseIcon /> : <MenuIcon />}
       </button>
       {menuOpen && (
         <div id="mobile-menu" className={styles.mobileMenu}>
