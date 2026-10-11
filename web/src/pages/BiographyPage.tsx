@@ -33,13 +33,13 @@ export function BiographyPage({ settings }: { settings: SiteSettings }) {
             ))}
           </div>
           <div className={styles.photos}>
-            <img src={sizedUrl(bio.portrait.url, 1200)} alt={bio.portrait.alt} className={`mono-hover ${styles.portrait}`} style={focalStyle(bio.portrait)} />
+            <img src={sizedUrl(bio.portrait.url, 1200)} alt={bio.portrait.alt} className={styles.portrait} style={focalStyle(bio.portrait)} />
             {bio.secondaryImage && (
               <Reveal className={styles.secondaryWrap}>
                 <img
                   src={sizedUrl(bio.secondaryImage.url, 1000)}
                   alt={bio.secondaryImage.alt}
-                  className={`mono-hover ${styles.secondary}`}
+                  className={styles.secondary}
                   style={focalStyle(bio.secondaryImage)}
                   loading="lazy"
                 />

@@ -47,7 +47,7 @@ export function ContactPage({ settings }: { settings: SiteSettings }) {
         </div>
 
         <Reveal from="right" className={styles.framed}>
-          <img src={sizedUrl(image.url, 1200)} alt={image.alt} className={`mono-hover ${styles.image}`} style={focalStyle(image)} />
+          <img src={sizedUrl(image.url, 1200)} alt={image.alt} className={styles.image} style={focalStyle(image)} />
           <div aria-hidden="true" className={styles.frame} />
         </Reveal>
       </div>

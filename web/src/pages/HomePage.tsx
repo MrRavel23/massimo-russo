@@ -60,7 +60,7 @@ export function HomePage({ settings }: { settings: SiteSettings }) {
             </Reveal>
           </div>
           <Reveal from="right" className={styles.framed}>
-            <img src={sizedUrl(home.aboutImage.url, 1200)} alt={home.aboutImage.alt} className={`mono-hover ${styles.aboutImage}`} style={focalStyle(home.aboutImage)} loading="lazy" />
+            <img src={sizedUrl(home.aboutImage.url, 1200)} alt={home.aboutImage.alt} className={styles.aboutImage} style={focalStyle(home.aboutImage)} loading="lazy" />
             <div aria-hidden="true" className={styles.frame} />
           </Reveal>
         </div>

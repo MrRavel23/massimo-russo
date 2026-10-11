@@ -60,7 +60,7 @@ export function GalleryPage({ settings }: { settings: SiteSettings }) {
             <div className={styles.masonry}>
               {photos.map((photo) => (
                 <Reveal key={photo._key} className={styles.masonryItem}>
-                  <img src={sizedUrl(photo.url, 900)} alt={photo.alt} className={`mono-hover ${styles.photo}`} loading="lazy" />
+                  <img src={sizedUrl(photo.url, 900)} alt={photo.alt} className={styles.photo} loading="lazy" />
                 </Reveal>
               ))}
             </div>
