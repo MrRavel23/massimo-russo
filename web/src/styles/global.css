@@ -80,7 +80,7 @@ img {
 
 /* Black and white until hovered */
 .mono-hover {
-  filter: grayscale(1);
+  filter: grayscale(0);
   transition: filter var(--fade-slow);
 }
 
